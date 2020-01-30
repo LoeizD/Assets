@@ -9,12 +9,17 @@
 <body>
     <h1 id="title1">HELLO</h1>
 
-<button id="button1">PRESS ME</button>
+<button id="button1">PRESS ME 1</button>
+<button id="button2">PRESS ME 2</button>
 
 <script>
   document.querySelector("#button1").addEventListener( 'click', function() {
 	document.querySelector("#title1").innerHTML = 'GOODBYE';
 })
+document.querySelector("#button2").addEventListener( 'click', function() {
+	document.querySelector("#title1").innerHTML = 'ICE CREAM 💋';
+})
+
 </script>
 
 <style>
