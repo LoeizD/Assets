@@ -12,6 +12,8 @@
 <button id="button1">PRESS ME 1</button>
 <button id="button2">PRESS ME 2</button>
 <button id="button3">PRESS ME 3</button>
+<p id="x">X</p>
+<p id="y">Y</p>
 
 <script>
   document.querySelector("#button1").addEventListener( 'click', function() {
@@ -23,6 +25,8 @@ document.querySelector("#button2").addEventListener( 'click', function() {
 document.querySelector("#button3").addEventListener( 'click', function() {
 	document.querySelector("#title1").innerHTML = 'John Wayne';
 })
+document.querySelector("#x").innerHTML = screen.width;
+document.querySelector("#y").innerHTML = screen.height;
 </script>
 
 <style>
