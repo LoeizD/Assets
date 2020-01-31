@@ -7,10 +7,11 @@
     <title>Document</title>
 </head>
 <body>
-    <h1 id="title1">HELLO</h1>
+<h1 id="title1">HELLO</h1>
 
 <button id="button1">PRESS ME 1</button>
 <button id="button2">PRESS ME 2</button>
+<button id="button3">PRESS ME 3</button>
 
 <script>
   document.querySelector("#button1").addEventListener( 'click', function() {
@@ -19,13 +20,27 @@
 document.querySelector("#button2").addEventListener( 'click', function() {
 	document.querySelector("#title1").innerHTML = 'ICE CREAM 💋';
 })
-
+document.querySelector("#button3").addEventListener( 'click', function() {
+	document.querySelector("#title1").innerHTML = 'John Wayne';
+})
 </script>
 
 <style>
 	#button1 {
 padding: 50px;
 }
+#button2 {
+  padding: 30px;
+}
+#button3 {
+  padding: 30px;
+  margin: 10px;
+  background-color: red;
+position: absolute;
+ right:  0;
+ bottom:  0;
+}
+
 </style>
 
 </body>
